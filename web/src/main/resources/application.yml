@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: local
+server:
+  port: 9090
+  servlet:
+    context-path: /web
+
+server.error.whitelabel.enabled: false

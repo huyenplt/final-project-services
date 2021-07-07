@@ -1,0 +1,56 @@
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:2.1.8.RELEASE")
+	}
+}
+
+plugins {
+	id 'org.springframework.boot' version '2.3.4.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+	id 'java'
+	id 'idea'
+	id 'eclipse'
+	id 'war'
+}
+
+group = 'vn.co.vis'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+configurations {
+	//eliminates logback
+	all*.exclude group: 'ch.qos.logback'
+
+	//eliminates StackOverflowError
+	all*.exclude group: 'org.apache.logging.log4j', module: 'log4j-to-slf4j'
+	all*.exclude module: 'spring-boot-starter-logging'
+}
+
+dependencies {
+	compile        'org.projectlombok:lombok:1.18.10'
+	annotationProcessor 'org.projectlombok:lombok:1.18.10'
+	implementation 'org.springframework.boot:spring-boot-starter-jdbc:2.3.12.RELEASE'
+	implementation "org.springframework.boot:spring-boot-starter-web:2.3.12.RELEASE"
+	implementation 'org.springframework.boot:spring-boot-starter-validation:2.3.12.RELEASE'
+
+	compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
+	compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
+	compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.17'
+	compile group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.0'
+	compile(group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa', version:'1.5.6.RELEASE') {
+		exclude(module: 'tomcat-jdbc')
+	}
+
+	compile project(':common')
+}
+
+test {
+	useJUnitPlatform()
+}

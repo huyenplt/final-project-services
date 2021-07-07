@@ -1,0 +1,64 @@
+plugins {
+	id 'java'
+	id 'idea'
+	id 'eclipse'
+	id 'war'
+}
+
+group = 'vn.co.vis'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+configurations {
+	developmentOnly
+	runtimeClasspath {
+		extendsFrom developmentOnly
+	}
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+	//eliminates logback
+	all*.exclude group: 'ch.qos.logback'
+
+	//eliminates StackOverflowError
+	all*.exclude group: 'org.apache.logging.log4j', module: 'log4j-to-slf4j'
+	all*.exclude module: 'spring-boot-starter-logging'
+}
+
+dependencies {
+	compile 'org.projectlombok:lombok:1.18.10'
+	annotationProcessor 'org.projectlombok:lombok:1.18.10'
+
+	compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.9.3'
+	compile(group: 'org.springframework.boot', name: 'spring-boot-starter', version: '2.1.8.RELEASE') {
+		exclude(module: 'commons-logging')
+	}
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.1.8.RELEASE'
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-log4j2', version: '2.1.8.RELEASE'
+	compile group: 'commons-io', name: 'commons-io', version: '2.6'
+
+	compile group: 'javax.persistence', name: 'javax.persistence-api', version: '2.2'
+
+	compile group: 'commons-codec', name: 'commons-codec', version: '1.13'
+
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: '2.1.8.RELEASE'
+	compile group: 'org.springframework.boot', name: 'spring-boot-devtools', version: '2.1.8.RELEASE'
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-jdbc', version: '2.1.8.RELEASE'
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.1.8.RELEASE'
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version: '2.1.8.RELEASE'
+	compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
+	compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
+	compile group: 'org.springframework', name: 'spring-context-support', version: '5.1.9.RELEASE'
+
+	compile('javax.xml.bind:jaxb-api:2.3.0')
+	compile('javax.activation:activation:1.1')
+	compile('org.glassfish.jaxb:jaxb-runtime:2.3.0')
+}
+
+//test {
+//	useJUnitPlatform()
+//}

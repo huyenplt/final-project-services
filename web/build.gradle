@@ -1,0 +1,37 @@
+plugins {
+	id 'org.springframework.boot' version '2.3.4.RELEASE'
+	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
+	id 'java'
+}
+
+jar {
+	baseName = 'web-service'
+	version =  ''
+}
+
+group = 'vn.co.vis'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '11'
+
+repositories {
+	mavenCentral()
+}
+
+configurations {
+	//eliminates logback
+	all*.exclude group: 'ch.qos.logback'
+
+	//eliminates StackOverflowError
+	all*.exclude group: 'org.apache.logging.log4j', module: 'log4j-to-slf4j'
+	all*.exclude module: 'spring-boot-starter-logging'
+}
+
+dependencies {
+	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5'
+
+	compile project(':common')
+}
+
+test {
+	useJUnitPlatform()
+}
