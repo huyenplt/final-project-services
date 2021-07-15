@@ -1,5 +1,6 @@
 package vn.co.vis.web.service;
 
+import vn.co.vis.common.dao.entity.User;
 import vn.co.vis.common.dto.response.UserResponse;
 
 import javax.servlet.http.HttpServletRequest;
@@ -13,5 +14,8 @@ import java.util.Optional;
 
 public interface UserService {
     Optional<UserResponse> getUser(HttpServletRequest httpServletRequest, String userName);
+
     Optional<List<UserResponse>> getUsers(HttpServletRequest httpServletRequest);
+
+    Optional<UserResponse> createUser(HttpServletRequest httpServletRequest, User user);
 }

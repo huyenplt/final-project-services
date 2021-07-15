@@ -8,8 +8,10 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.client.RestTemplate;
-import vn.co.vis.restful.utility.passwd.service.PasswordService;
+//import vn.co.vis.restful.utility.passwd.service.PasswordService;
 
 import javax.sql.DataSource;
 
@@ -21,14 +23,14 @@ import javax.sql.DataSource;
 @ComponentScan
 public class ApplicationConfig {
 
-    @Autowired
-    private PasswordService passwordService;
-    @Value("${database.url}")
-    private String databaseUrl;
-    @Value("${database.user}")
-    private String databaseUser;
-    @Value("${database.driver.class.name}")
-    private String databaseClassName;
+//    @Autowired
+//    private PasswordService passwordService;
+//    @Value("${database.url}")
+//    private String databaseUrl;
+//    @Value("${database.user}")
+//    private String databaseUser;
+//    @Value("${database.driver.class.name}")
+//    private String databaseClassName;
 
     /**
      * Config RestTemplate.
@@ -45,26 +47,34 @@ public class ApplicationConfig {
      *
      * @return DataSource
      */
+//    @Bean
+//    public DataSource dataSource() {
+
+//        DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
+//        String passWord = passwordService.getPassword("mysql.password");
+//        driverManagerDataSource.setDriverClassName(databaseClassName);
+//        driverManagerDataSource.setUrl(databaseUrl);
+//        driverManagerDataSource.setUsername(databaseUser);
+//        driverManagerDataSource.setPassword(passWord);
+
+//        return driverManagerDataSource;
+//    }
+
     @Bean
-    public DataSource dataSource() {
-
-        DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
-        String passWord = passwordService.getPassword("mysql.password");
-        driverManagerDataSource.setDriverClassName(databaseClassName);
-        driverManagerDataSource.setUrl(databaseUrl);
-        driverManagerDataSource.setUsername(databaseUser);
-        driverManagerDataSource.setPassword(passWord);
-
-        return driverManagerDataSource;
+    public PasswordEncoder encoder() {
+        return new BCryptPasswordEncoder();
     }
 
-    /**
-     * Configure JdbcTemplate
-     *
-     * @return JdbcTemplate
-     */
-    @Bean
-    public JdbcTemplate jdbcTemplate() {
-        return new JdbcTemplate(dataSource());
-    }
+
+//    /**
+//     * Configure JdbcTemplate
+//     *
+//     * @return JdbcTemplate
+//     */
+//    @Bean
+//    public JdbcTemplate jdbcTemplate() {
+//        return new JdbcTemplate(dataSource());
+//    }
+
+
 }

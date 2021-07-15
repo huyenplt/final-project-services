@@ -1,7 +1,10 @@
 package vn.co.vis.web.service.impl;
 
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
+import vn.co.vis.common.dao.entity.User;
 import vn.co.vis.common.dto.response.UserResponse;
+import vn.co.vis.common.exception.RequestParamInvalidException;
 import vn.co.vis.web.service.AbstractService;
 import vn.co.vis.web.service.UserService;
 
@@ -34,5 +37,25 @@ public class UserServiceImpl extends AbstractService implements UserService {
             return Optional.empty();
         }
         return Optional.of(Arrays.asList(responses));
+    }
+
+    @Override
+    public Optional<UserResponse> createUser(HttpServletRequest httpServletRequest, User user) {
+        if (user == null) {
+            throw new RequestParamInvalidException("Request params can not be null");
+        }
+
+        String message = validator.validateRequestThenReturnMessage(user);
+        if (!StringUtils.isEmpty(message)) {
+            throw new RequestParamInvalidException(message);
+        }
+
+        UserResponse response = apiExchangeService.post(httpServletRequest, backApiUrl + "/users", user, UserResponse.class);
+
+        if (response == null) {
+            return Optional.empty();
+        }
+
+        return Optional.of(response);
     }
 }

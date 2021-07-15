@@ -13,6 +13,7 @@ import vn.co.vis.web.filter.TokenAuthenticationFilter;
 
 /**
  * Web security config
+ *
  * @author Giang Thanh Quang
  * @since 10/15/2020
  */

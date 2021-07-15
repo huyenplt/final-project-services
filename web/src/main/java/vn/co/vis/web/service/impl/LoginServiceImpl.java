@@ -1,12 +1,11 @@
 package vn.co.vis.web.service.impl;
 
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
-import vn.co.vis.web.constant.SessionAttributeName;
 import vn.co.vis.common.dto.request.LoginRequest;
 import vn.co.vis.common.dto.response.LoginResponse;
 import vn.co.vis.common.exception.RequestParamInvalidException;
+import vn.co.vis.web.constant.SessionAttributeName;
 import vn.co.vis.web.service.AbstractService;
 import vn.co.vis.web.service.LoginService;
 

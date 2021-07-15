@@ -7,7 +7,6 @@ import org.springframework.web.client.RestTemplate;
 
 /**
  * Common configurations
- *
  */
 @Configuration
 @ComponentScan

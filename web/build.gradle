@@ -1,12 +1,19 @@
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath("org.springframework.boot:spring-boot-gradle-plugin:2.1.8.RELEASE")
+	}
+}
+
 plugins {
 	id 'org.springframework.boot' version '2.3.4.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
 	id 'java'
-}
-
-jar {
-	baseName = 'web-service'
-	version =  ''
+	id 'idea'
+	id 'eclipse'
+	id 'war'
 }
 
 group = 'vn.co.vis'
@@ -27,8 +34,12 @@ configurations {
 }
 
 dependencies {
+	implementation "org.springframework.boot:spring-boot-starter-web:2.3.12.RELEASE"
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: '2.1.8.RELEASE'
 	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity5'
-
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	implementation 'org.junit.jupiter:junit-jupiter-api:5.5.1'
+	testCompile("org.springframework.boot:spring-boot-starter-test")
 	compile project(':common')
 }
 

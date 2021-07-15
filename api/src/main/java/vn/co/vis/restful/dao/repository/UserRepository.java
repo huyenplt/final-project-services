@@ -1,6 +1,6 @@
 package vn.co.vis.restful.dao.repository;
 
-import vn.co.vis.restful.dao.entity.User;
+import vn.co.vis.common.dao.entity.User;
 
 import java.util.List;
 import java.util.Optional;

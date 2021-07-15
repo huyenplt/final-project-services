@@ -1,0 +1,698 @@
+2021/07/14 14:17:43:883[INFO][logID]  Request http://localhost:9090/web/login
+2021/07/14 14:17:43:888[INFO]  Response=<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login page</title>
+</head>
+<body>
+    <form action="/web/login" method="post">
+        <label for="userName">User name:</label>
+        <input type="text" id="userName" name="userName"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+2021/07/14 14:27:24:132[INFO][logID]  Request http://localhost:9090/web/login
+2021/07/14 14:27:24:140[INFO]  Response=<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login page</title>
+</head>
+<body>
+    <form action="/web/login" method="post">
+        <label for="userName">User name:</label>
+        <input type="text" id="userName" name="userName"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+2021/07/14 14:27:35:613[INFO][logID]  Request http://localhost:9090/web/login Payload=userName=thinhvv&password=vanthinh98
+2021/07/14 14:27:35:613[INFO]  Response=[unknown]
+2021/07/14 14:27:35:686[INFO][logID]  Request http://localhost:9090/web/user/detail Query=user-name=thinhvv
+2021/07/14 14:27:35:686[INFO]  Response=<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Welcome thinh vu</h1>
+    <p>Phone number: 3213254564</p>
+    <p>Email: thinh@gmail.com</p>
+</body>
+</html>
+2021/07/14 15:29:23:359[INFO][logID]  Request http://localhost:9090/web/login
+2021/07/14 15:29:23:359[INFO]  Response=<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login page</title>
+</head>
+<body>
+    <form action="/web/login" method="post">
+        <label for="userName">User name:</label>
+        <input type="text" id="userName" name="userName"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+2021/07/14 15:29:30:962[INFO][logID]  Request http://localhost:9090/web/login
+2021/07/14 15:29:30:962[INFO]  Response=<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login page</title>
+</head>
+<body>
+    <form action="/web/login" method="post">
+        <label for="userName">User name:</label>
+        <input type="text" id="userName" name="userName"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+2021/07/14 15:31:00:044[INFO][logID]  Request http://localhost:9090/web/login
+2021/07/14 15:31:00:044[INFO]  Response=<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login page</title>
+</head>
+<body>
+    <form action="/web/login" method="post">
+        <label for="userName">User name:</label>
+        <input type="text" id="userName" name="userName"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+2021/07/14 15:31:52:590[INFO][logID]  Request http://localhost:9090/web/login
+2021/07/14 15:31:52:590[INFO]  Response=<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login page</title>
+</head>
+<body>
+    <form action="/web/login" method="post">
+        <label for="userName">User name:</label>
+        <input type="text" id="userName" name="userName"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+2021/07/14 15:33:09:359[INFO][logID]  Request http://localhost:9090/web/user/create
+2021/07/14 15:33:09:361[INFO]  Response=[unknown]
+2021/07/14 15:33:20:536[INFO][logID]  Request http://localhost:9090/web/error
+2021/07/14 15:33:20:536[INFO]  Response=[unknown]
+2021/07/14 15:33:40:411[INFO][logID]  Request http://localhost:9090/web/user/create
+2021/07/14 15:33:40:412[INFO]  Response=[unknown]
+2021/07/14 15:33:40:441[INFO][logID]  Request http://localhost:9090/web/error
+2021/07/14 15:33:40:442[INFO]  Response=[unknown]
+2021/07/14 15:33:47:188[INFO][logID]  Request http://localhost:9090/web/user/create
+2021/07/14 15:33:47:189[INFO]  Response=[unknown]
+2021/07/14 15:33:47:208[INFO][logID]  Request http://localhost:9090/web/error
+2021/07/14 15:33:47:209[INFO]  Response=[unknown]
+2021/07/14 15:33:48:611[INFO][logID]  Request http://localhost:9090/web/user/create
+2021/07/14 15:33:48:611[INFO]  Response=[unknown]
+2021/07/14 15:33:48:630[INFO][logID]  Request http://localhost:9090/web/error
+2021/07/14 15:33:48:630[INFO]  Response=[unknown]
+2021/07/14 15:33:57:994[INFO][logID]  Request http://localhost:9090/web/login
+2021/07/14 15:33:57:994[INFO]  Response=<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login page</title>
+</head>
+<body>
+    <form action="/web/login" method="post">
+        <label for="userName">User name:</label>
+        <input type="text" id="userName" name="userName"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+2021/07/14 15:34:17:461[INFO][logID]  Request http://localhost:9090/web/user/create
+2021/07/14 15:34:17:462[INFO]  Response=[unknown]
+2021/07/14 15:34:17:475[INFO][logID]  Request http://localhost:9090/web/error
+2021/07/14 15:34:17:476[INFO]  Response=[unknown]
+2021/07/14 15:35:15:982[INFO][logID]  Request http://localhost:9090/web/user/create
+2021/07/14 15:35:15:983[INFO]  Response=[unknown]
+2021/07/14 15:35:16:001[INFO][logID]  Request http://localhost:9090/web/error
+2021/07/14 15:35:16:002[INFO]  Response=[unknown]
+2021/07/14 15:35:53:999[INFO][logID]  Request http://localhost:9090/web/user/create
+2021/07/14 15:35:54:002[INFO]  Response=<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create user</title>
+</head>
+<body>
+    <form action="/web/user/create" method="post">
+        <label for="username">User name:</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="email">Password:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="firstName">Password:</label>
+        <input type="text" id="firstName" name="firstName"><br><br>
+
+        <label for="lastName">Password:</label>
+        <input type="text" id="lastName" name="lastName"><br><br>
+
+        <label for="phone">Password:</label>
+        <input type="text" id="phone" name="phone"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
+2021/07/14 15:36:38:681[INFO][logID]  Request http://localhost:9090/web/user/create
+2021/07/14 15:36:38:681[INFO]  Response=<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create user</title>
+</head>
+<body>
+    <form action="/web/user/create" method="post">
+        <label for="username">User name:</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="email">Password:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="firstName">Password:</label>
+        <input type="text" id="firstName" name="firstName"><br><br>
+
+        <label for="lastName">Password:</label>
+        <input type="text" id="lastName" name="lastName"><br><br>
+
+        <label for="phone">Password:</label>
+        <input type="text" id="phone" name="phone"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
+2021/07/14 15:36:44:432[INFO][logID]  Request http://localhost:9090/web/user/create
+2021/07/14 15:36:44:432[INFO]  Response=<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create user</title>
+</head>
+<body>
+    <form action="/web/user/create" method="post">
+        <label for="username">User name:</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName"><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName"><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
+2021/07/14 15:38:13:673[INFO][logID]  Request http://localhost:9090/web/user/create Payload=username=thinhvv1&password=vanthinh98&email=thinh%40gmail.com&firstName=thinh&lastName=vu&phone=13335454
+2021/07/14 15:38:13:674[INFO]  Response=[unknown]
+2021/07/14 15:38:13:690[INFO][logID]  Request http://localhost:9090/web/error/system-error
+2021/07/14 15:38:13:690[INFO]  Response=<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+</head>
+<body>
+    <h1>This site has an error</h1>
+</body>
+</html>
+2021/07/14 15:38:48:382[INFO][logID]  Request http://localhost:9090/web/user/create
+2021/07/14 15:38:48:383[INFO]  Response=<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create user</title>
+</head>
+<body>
+    <form action="/web/user/create" method="post">
+        <label for="username">User name:</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName"><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName"><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
+2021/07/14 15:38:54:166[INFO][logID]  Request http://localhost:9090/web/user/create Payload=username=thinhvv1&password=vanthinh98&email=thinh%40gmail.com&firstName=thinh&lastName=vu&phone=13335454
+2021/07/14 15:38:54:170[INFO]  Response=[unknown]
+2021/07/14 15:38:54:182[INFO][logID]  Request http://localhost:9090/web/error/system-error
+2021/07/14 15:38:54:183[INFO]  Response=<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+</head>
+<body>
+    <h1>This site has an error</h1>
+</body>
+</html>
+2021/07/14 15:38:57:063[INFO][logID]  Request http://localhost:9090/web/user/create
+2021/07/14 15:38:57:063[INFO]  Response=<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create user</title>
+</head>
+<body>
+    <form action="/web/user/create" method="post">
+        <label for="username">User name:</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName"><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName"><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
+2021/07/14 15:39:18:478[INFO][logID]  Request http://localhost:9090/web/user/create Payload=username=thinhvv1&password=vanthinh98&email=thinh%40gmail.com&firstName=thinh&lastName=vu&phone=13335454
+2021/07/14 15:39:18:479[INFO]  Response=[unknown]
+2021/07/14 15:39:18:489[INFO][logID]  Request http://localhost:9090/web/error/system-error
+2021/07/14 15:39:18:489[INFO]  Response=<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+</head>
+<body>
+    <h1>This site has an error</h1>
+</body>
+</html>
+2021/07/14 15:40:33:097[INFO][logID]  Request http://localhost:9090/web/user/create
+2021/07/14 15:40:33:097[INFO]  Response=<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create user</title>
+</head>
+<body>
+    <form action="/web/user/create" method="post">
+        <label for="username">User name:</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName"><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName"><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
+2021/07/14 15:44:13:453[INFO][logID]  Request http://localhost:9090/web/user/create Payload=username=thinhvv1&password=vanthinh98&email=thinh%40gmail.com&firstName=thinh&lastName=vu&phone=13335454
+2021/07/14 15:44:13:454[INFO]  Response=[unknown]
+2021/07/14 15:44:13:477[INFO][logID]  Request http://localhost:9090/web/error/system-error
+2021/07/14 15:44:13:477[INFO]  Response=<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+</head>
+<body>
+    <h1>This site has an error</h1>
+</body>
+</html>
+2021/07/14 15:53:09:852[INFO][logID]  Request http://localhost:9090/web/user/create
+2021/07/14 15:53:09:857[INFO]  Response=<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create user</title>
+</head>
+<body>
+    <form action="/web/user/create" method="post">
+        <label for="username">User name:</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName"><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName"><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
+2021/07/14 15:53:40:535[INFO][logID]  Request http://localhost:9090/web/user/create Payload=username=asdfsaf&password=asdfdsaf&email=thinh%40gmail.com&firstName=Th%E1%BB%8Bnh&lastName=Th%E1%BB%8Bnh&phone=0356254682
+2021/07/14 15:53:40:535[INFO]  Response=[unknown]
+2021/07/14 15:53:40:542[INFO][logID]  Request http://localhost:9090/web/error/system-error
+2021/07/14 15:53:40:543[INFO]  Response=<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+</head>
+<body>
+    <h1>This site has an error</h1>
+</body>
+</html>
+2021/07/14 16:27:06:188[INFO][logID]  Request http://localhost:9090/web/login
+2021/07/14 16:27:06:193[INFO]  Response=<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login page</title>
+</head>
+<body>
+    <form action="/web/login" method="post">
+        <label for="userName">User name:</label>
+        <input type="text" id="userName" name="userName"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+2021/07/14 16:27:13:441[INFO][logID]  Request http://localhost:9090/web/login
+2021/07/14 16:27:13:441[INFO]  Response=<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login page</title>
+</head>
+<body>
+    <form action="/web/login" method="post">
+        <label for="userName">User name:</label>
+        <input type="text" id="userName" name="userName"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+2021/07/14 16:27:27:262[INFO][logID]  Request http://localhost:9090/web/user/create
+2021/07/14 16:27:27:263[INFO]  Response=<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create user</title>
+</head>
+<body>
+    <form action="/web/user/create" method="post">
+        <label for="username">User name:</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName"><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName"><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
+2021/07/14 16:28:06:604[INFO][logID]  Request http://localhost:9090/web/user/create Payload=username=thinhvv11&password=vanthinh98&email=thinh%40gmail.com&firstName=Th%E1%BB%8Bnh&lastName=Th%E1%BB%8Bnh&phone=0356254682
+2021/07/14 16:28:06:605[INFO]  Response=[unknown]
+2021/07/14 16:28:06:644[INFO][logID]  Request http://localhost:9090/web/login
+2021/07/14 16:28:06:645[INFO]  Response=<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login page</title>
+</head>
+<body>
+    <form action="/web/login" method="post">
+        <label for="userName">User name:</label>
+        <input type="text" id="userName" name="userName"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+2021/07/15 14:03:58:460[INFO][logID]  Request http://localhost:9090/web/login
+2021/07/15 14:03:58:475[INFO]  Response=<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login page</title>
+</head>
+<body>
+    <form action="/web/login" method="post">
+        <label for="userName">User name:</label>
+        <input type="text" id="userName" name="userName"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+2021/07/15 15:19:21:498[INFO][logID]  Request http://localhost:9090/web/login
+2021/07/15 15:19:21:498[INFO]  Response=<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login page</title>
+</head>
+<body>
+    <form action="/web/login" method="post">
+        <label for="userName">User name:</label>
+        <input type="text" id="userName" name="userName"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+2021/07/15 15:35:49:551[INFO][logID]  Request http://localhost:9090/web/login Payload=userName=thinhvv&password=vanthinh98
+2021/07/15 15:35:49:551[INFO]  Response=[unknown]
+2021/07/15 15:35:49:666[INFO][logID]  Request http://localhost:9090/web/user/detail Query=user-name=thinhvv
+2021/07/15 15:35:49:667[INFO]  Response=<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Welcome thinh vu</h1>
+    <p>Phone number: 3213254564</p>
+    <p>Email: thinh@gmail.com</p>
+</body>
+</html>
+2021/07/15 15:36:02:531[INFO][logID]  Request http://localhost:9090/web/login
+2021/07/15 15:36:02:532[INFO]  Response=<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login page</title>
+</head>
+<body>
+    <form action="/web/login" method="post">
+        <label for="userName">User name:</label>
+        <input type="text" id="userName" name="userName"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+2021/07/15 15:36:15:463[INFO][logID]  Request http://localhost:9090/web/login
+2021/07/15 15:36:15:464[INFO]  Response=<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login page</title>
+</head>
+<body>
+    <form action="/web/login" method="post">
+        <label for="userName">User name:</label>
+        <input type="text" id="userName" name="userName"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+2021/07/15 15:36:24:753[INFO][logID]  Request http://localhost:9090/web/login
+2021/07/15 15:36:24:754[INFO]  Response=<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login page</title>
+</head>
+<body>
+    <form action="/web/login" method="post">
+        <label for="userName">User name:</label>
+        <input type="text" id="userName" name="userName"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+2021/07/15 15:36:31:729[INFO][logID]  Request http://localhost:9090/web/user/create
+2021/07/15 15:36:31:729[INFO]  Response=<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create user</title>
+</head>
+<body>
+    <form action="/web/user/create" method="post">
+        <label for="username">User name:</label>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName"><br><br>
+
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName"><br><br>
+
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
+2021/07/15 15:36:58:555[INFO][logID]  Request http://localhost:9090/web/user/create Payload=username=thinh123&password=vanthinh98&email=thinh%40gmail.com&firstName=Th%E1%BB%8Bnh&lastName=Th%E1%BB%8Bnh&phone=0356254682
+2021/07/15 15:36:58:556[INFO]  Response=[unknown]
+2021/07/15 15:36:58:583[INFO][logID]  Request http://localhost:9090/web/login
+2021/07/15 15:36:58:583[INFO]  Response=<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login page</title>
+</head>
+<body>
+    <form action="/web/login" method="post">
+        <label for="userName">User name:</label>
+        <input type="text" id="userName" name="userName"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+2021/07/15 15:37:06:561[INFO][logID]  Request http://localhost:9090/web/login Payload=userName=thinh123&password=vanthinh98
+2021/07/15 15:37:06:561[INFO]  Response=[unknown]
+2021/07/15 15:37:06:596[INFO][logID]  Request http://localhost:9090/web/user/detail Query=user-name=thinh123
+2021/07/15 15:37:06:597[INFO]  Response=<!DOCTYPE html>
+<html xml:lang="en" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Welcome Thịnh Thịnh</h1>
+    <p>Phone number: 0356254682</p>
+    <p>Email: thinh@gmail.com</p>
+</body>
+</html>

@@ -10,6 +10,7 @@ import vn.co.vis.common.exception.TokenInvalidException;
 
 /**
  * Exception handler
+ *
  * @author Giang Thanh Quang
  * @since 10/28/2020
  */

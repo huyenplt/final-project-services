@@ -11,6 +11,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.http.HttpHeaders;
 import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
 import org.springframework.web.servlet.DispatcherServlet;
@@ -28,6 +29,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 @ComponentScan("vn.co.vis")
+@EntityScan("vn.co.vis.*")
+@EnableJpaRepositories("vn.co.vis.*")
 @SpringBootApplication
 @EnableSwagger2
 public class RestfulApplication {

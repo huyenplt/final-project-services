@@ -7,6 +7,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
 import org.springframework.web.servlet.HandlerExceptionResolver;
+import vn.co.vis.common.constant.HttpMethod;
 import vn.co.vis.common.exception.TokenInvalidException;
 import vn.co.vis.restful.service.VerifyService;
 
@@ -16,7 +17,9 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Filter authenticate token for system
@@ -37,9 +40,10 @@ public class TokenAuthenticationFilter extends OncePerRequestFilter {
 
     public static final String LOCAL = "local";
     public static final String DEV = "dev";
-    private static final List<String> PUBLIC_ACCEPTED_URL = List.of(
-            "/login"
-    );
+    private static final Map<String, String> PUBLIC_ACCEPTED_URL = new HashMap<>() {{
+        put("/login", HttpMethod.POST);
+        put("/users", HttpMethod.POST);
+    }};
 
     @Value("${spring.profiles.active}")
     private String profileActive;
@@ -58,7 +62,8 @@ public class TokenAuthenticationFilter extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest httpRequest, HttpServletResponse httpResponse, FilterChain chain) throws ServletException, IOException {
         String requestURI = httpRequest.getRequestURI();
-        if (isPubicRequest(requestURI)) {
+        String requestMethod = httpRequest.getMethod();
+        if (isPubicRequest(requestURI, requestMethod)) {
             chain.doFilter(httpRequest, httpResponse);
             return;
         }
@@ -82,11 +87,11 @@ public class TokenAuthenticationFilter extends OncePerRequestFilter {
      * @param requestURI current request uri
      * @return boolean
      */
-    private boolean isPubicRequest(String requestURI) {
+    private boolean isPubicRequest(String requestURI, String requestMethod) {
 
         String ctxPath = servletContext.getContextPath();
-        for (String req : PUBLIC_ACCEPTED_URL) {
-            if (requestURI.startsWith(ctxPath + req)) {
+        for (Map.Entry<String, String> entry : PUBLIC_ACCEPTED_URL.entrySet()) {
+            if (requestURI.startsWith(ctxPath + entry.getKey()) && requestMethod.equals(entry.getValue())) {
                 return true;
             }
         }

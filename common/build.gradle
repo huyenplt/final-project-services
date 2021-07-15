@@ -45,9 +45,7 @@ dependencies {
 
 	compile group: 'commons-codec', name: 'commons-codec', version: '1.13'
 
-	compile group: 'org.springframework.boot', name: 'spring-boot-starter-thymeleaf', version: '2.1.8.RELEASE'
 	compile group: 'org.springframework.boot', name: 'spring-boot-devtools', version: '2.1.8.RELEASE'
-	compile group: 'org.springframework.boot', name: 'spring-boot-starter-jdbc', version: '2.1.8.RELEASE'
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-security', version: '2.1.8.RELEASE'
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-tomcat', version: '2.1.8.RELEASE'
 	compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'

@@ -1,1 +1,41 @@
 2021/07/12 14:26:55:865[ERROR] token is empty!
+2021/07/13 14:14:18:913[ERROR] token is empty!
+2021/07/13 14:14:54:605[ERROR] token is empty!
+2021/07/13 14:15:00:497[ERROR] token is empty!
+2021/07/13 14:15:09:356[ERROR] token is empty!
+2021/07/13 14:31:04:957[ERROR] token is empty!
+2021/07/13 14:31:34:753[ERROR] token is empty!
+2021/07/13 14:39:55:437[ERROR] token is empty!
+2021/07/13 16:45:13:386[ERROR] token is empty!
+2021/07/13 16:49:39:196[ERROR] Failed to parse multipart servlet request; nested exception is java.lang.IllegalStateException: Unable to process parts as no multi-part configuration has been provided
+2021/07/13 16:54:01:415[ERROR] Failed to parse multipart servlet request; nested exception is java.lang.IllegalStateException: Unable to process parts as no multi-part configuration has been provided
+2021/07/13 16:55:28:941[ERROR] userName{validate.required}
+2021/07/13 16:55:41:494[ERROR] userName{validate.required}
+2021/07/13 16:57:13:980[ERROR] userName{validate.required}
+2021/07/13 16:57:19:482[ERROR] null
+2021/07/13 16:58:18:091[ERROR] null
+2021/07/13 16:59:33:176[ERROR] token is empty!
+2021/07/13 17:01:32:253[ERROR] token is empty!
+2021/07/13 17:02:47:442[ERROR] token is empty!
+2021/07/13 17:02:56:591[ERROR] rawPassword cannot be null
+2021/07/13 17:03:48:363[ERROR] rawPassword cannot be null
+2021/07/13 17:04:49:516[ERROR] rawPassword cannot be null
+2021/07/13 17:18:43:020[ERROR] token is empty!
+2021/07/13 17:33:13:827[ERROR] null
+2021/07/13 17:35:55:099[ERROR] null
+2021/07/13 17:48:47:105[ERROR] null
+2021/07/13 17:50:13:787[ERROR] null
+2021/07/13 17:51:54:579[ERROR] null
+2021/07/13 17:57:04:577[ERROR] null
+2021/07/14 08:23:08:187[ERROR] null
+2021/07/14 08:24:35:889[ERROR] null
+2021/07/14 08:29:55:262[ERROR] null
+2021/07/14 08:38:16:866[ERROR] null
+2021/07/14 09:10:57:612[ERROR] null
+2021/07/14 10:05:20:678[ERROR] token is empty!
+2021/07/14 10:11:53:169[ERROR] Incorrect result size: expected 1, actual 0
+2021/07/14 10:12:02:361[ERROR] Incorrect result size: expected 1, actual 0
+2021/07/14 10:19:03:143[ERROR] Incorrect result size: expected 1, actual 0
+2021/07/14 10:20:18:881[ERROR] This user is invalidate: thinhvv
+2021/07/14 10:21:14:619[ERROR] could not execute statement; SQL [n/a]; constraint [user.UK_sb8bbouer5wak8vyiiy4pf2bx]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+2021/07/14 15:44:13:427[ERROR] rawPassword cannot be null

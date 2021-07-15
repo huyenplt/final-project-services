@@ -3,21 +3,16 @@ package vn.co.vis.web.exchange;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
+import org.springframework.http.*;
 import org.springframework.stereotype.Component;
 import org.springframework.util.MultiValueMap;
 import org.springframework.util.StringUtils;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
-import vn.co.vis.web.constant.SessionAttributeName;
 import vn.co.vis.common.log.AppLogger;
 import vn.co.vis.common.log.LoggerFactory;
 import vn.co.vis.common.log.LoggerType;
+import vn.co.vis.web.constant.SessionAttributeName;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -41,7 +36,7 @@ public class ApiExchangeService {
     /**
      * the create mapper
      */
-    private ObjectMapper mapper = new ObjectMapper().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+    private final ObjectMapper mapper = new ObjectMapper().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 
     private static final AppLogger API_LOGGER = LoggerFactory.getLogger(LoggerType.API);
 

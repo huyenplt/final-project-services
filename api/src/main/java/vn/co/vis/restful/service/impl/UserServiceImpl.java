@@ -1,9 +1,10 @@
 package vn.co.vis.restful.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
-import vn.co.vis.restful.dao.entity.User;
-import vn.co.vis.restful.dao.repository.UserRepository;
+import vn.co.vis.common.dao.entity.User;
+import vn.co.vis.restful.dao.repository.CustomUserRepository;
 import vn.co.vis.common.dto.response.UserResponse;
 import vn.co.vis.common.exception.ResourceNotFoundException;
 import vn.co.vis.restful.service.AbstractService;
@@ -21,11 +22,22 @@ import java.util.stream.Collectors;
 public class UserServiceImpl extends AbstractService implements UserService {
 
     @Autowired
-    UserRepository userRepository;
+    CustomUserRepository customUserRepository;
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
+
+    public Optional<UserResponse> createUser(User user) {
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
+
+        User userRegistered = customUserRepository.save(user);
+        return Optional.of(new UserResponse(userRegistered.getId(), userRegistered.getFirstName(),
+                userRegistered.getLastName(), userRegistered.getEmail(), userRegistered.getPhone()));
+    }
 
     @Override
     public Optional<UserResponse> getUser(String userName) {
-        User user = userRepository.findById(userName).orElseThrow(() -> {
+        User user = customUserRepository.findByUsername(userName).orElseThrow(() -> {
             throw new ResourceNotFoundException();
         });
         return Optional.of(new UserResponse(user.getId(), user.getFirstName(), user.getLastName(), user.getEmail(), user.getPhone()));
@@ -33,9 +45,7 @@ public class UserServiceImpl extends AbstractService implements UserService {
 
     @Override
     public Optional<List<UserResponse>> getUsers() {
-        List<User> users = userRepository.getAllUsers().orElseThrow(() -> {
-            throw new ResourceNotFoundException();
-        });
+        List<User> users = customUserRepository.findAll();
         return Optional.of(users.stream()
                 .map(user -> new UserResponse(user.getId(), user.getFirstName(), user.getLastName(), user.getEmail(), user.getPhone()))
                 .collect(Collectors.toList()));

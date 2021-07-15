@@ -2,7 +2,7 @@ package vn.co.vis.restful.dao.repository.impl;
 
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.stereotype.Repository;
-import vn.co.vis.restful.dao.entity.User;
+import vn.co.vis.common.dao.entity.User;
 import vn.co.vis.restful.dao.repository.AbstractRepository;
 import vn.co.vis.restful.dao.repository.UserRepository;
 

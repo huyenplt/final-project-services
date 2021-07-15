@@ -25,7 +25,7 @@ import java.util.Optional;
  * Using to get password from folder passwd config
  *
  */
-@Component
+//@Component
 public class PasswordService {
 
     private String passWord;

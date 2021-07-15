@@ -8,15 +8,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Service;
-import vn.co.vis.restful.dao.entity.User;
-import vn.co.vis.restful.dao.repository.UserRepository;
+import vn.co.vis.common.dao.entity.User;
+import vn.co.vis.restful.dao.repository.CustomUserRepository;
 import vn.co.vis.common.exception.TokenInvalidException;
 import vn.co.vis.restful.service.AbstractService;
 import vn.co.vis.restful.service.VerifyService;
 import vn.co.vis.common.utility.DateTimeUtils;
-import vn.co.vis.restful.utility.passwd.service.PasswordService;
+//import vn.co.vis.restful.utility.passwd.service.PasswordService;
 
-import javax.annotation.PostConstruct;
 import java.util.Date;
 import java.util.Optional;
 
@@ -32,20 +31,21 @@ public class VerifyServiceImpl extends AbstractService implements VerifyService 
     private static final String JWT_HEADER_TYPE = "JWT";
     private static final String USER_NAME_PAYLOAD = "userName";
 
+    @Value("${token.secretKey")
     private String tokenKey;
     @Value("${token.expiration}")
     private Integer tokenExpiredValue;
 
-    @Autowired
-    PasswordService passwordService;
+//    @Autowired
+//    PasswordService passwordService;
 
     @Autowired
-    UserRepository userRepository;
+    CustomUserRepository customUserRepository;
 
-    @PostConstruct
-    public void init() {
-        this.tokenKey = passwordService.getPassword("token.key");
-    }
+//    @PostConstruct
+//    public void init() {
+//        this.tokenKey = passwordService.getPassword("token.key");
+//    }
 
     @Override
     public String generateLoginToken(String userName) {
@@ -72,7 +72,7 @@ public class VerifyServiceImpl extends AbstractService implements VerifyService 
             throw new TokenInvalidException("E2", "Can't verify token: " + token);
         }
 
-        Optional<User> user = userRepository.findById(userName);
+        Optional<User> user = customUserRepository.findByUsername(userName);
         return user.orElseThrow(() -> {
             throw new TokenInvalidException("E3", "This user is invalidate: " + userName);
         });

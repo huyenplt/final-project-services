@@ -12,7 +12,6 @@ import java.util.Set;
 
 /**
  * Validator to validate an object has annotations to validate
- *
  */
 @Component
 public class ObjectValidator {

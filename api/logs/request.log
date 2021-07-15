@@ -1,0 +1,247 @@
+2021/07/13 14:43:05:840[INFO][logID]  Request http://localhost:9091/api/error
+2021/07/13 14:43:05:840[INFO]  Response={"timestamp":"2021-07-13T07:43:05.828+00:00","status":403,"error":"Forbidden","message":"Access Denied","path":"/api/login"}
+2021/07/13 14:43:49:441[INFO][logID]  Request http://localhost:9091/api/error
+2021/07/13 14:43:49:441[INFO]  Response={"timestamp":"2021-07-13T07:43:49.439+00:00","status":403,"error":"Forbidden","message":"Access Denied","path":"/api/login"}
+2021/07/13 14:46:23:847[INFO][logID]  Request http://localhost:9091/api/error
+2021/07/13 14:46:23:848[INFO]  Response={"timestamp":"2021-07-13T07:46:23.846+00:00","status":403,"error":"Forbidden","message":"Access Denied","path":"/api/login"}
+2021/07/13 16:40:36:219[INFO][logID]  Request http://localhost:9091/api/error
+2021/07/13 16:40:36:245[INFO]  Response={"timestamp":"2021-07-13T09:40:36.188+00:00","status":403,"error":"Forbidden","message":"Access Denied","path":"/api/login"}
+2021/07/13 16:44:49:713[INFO][logID]  Request http://localhost:9091/api/error
+2021/07/13 16:44:49:713[INFO]  Response={"timestamp":"2021-07-13T09:44:49.709+00:00","status":403,"error":"Forbidden","message":"Forbidden","path":"/api/login"}
+2021/07/13 16:45:07:125[INFO][logID]  Request http://localhost:9091/api/error
+2021/07/13 16:45:07:126[INFO]  Response={"timestamp":"2021-07-13T09:45:07.120+00:00","status":403,"error":"Forbidden","message":"Forbidden","path":"/api"}
+2021/07/13 16:45:28:983[INFO][logID]  Request http://localhost:9091/api/error
+2021/07/13 16:45:28:983[INFO]  Response={"timestamp":"2021-07-13T09:45:28.981+00:00","status":500,"error":"Internal Server Error","trace":"org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported\n\tat org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.handleNoMatch(RequestMappingInfoHandlerMapping.java:213)\n\tat org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:422)\n\tat org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:367)\n\tat org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:110)\n\tat org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:59)\n\tat org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:396)\n\tat org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1234)\n\tat vn.co.vis.common.log.LoggableDispatcherServlet.doDispatch(LoggableDispatcherServlet.java:26)\n\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)\n\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)\n\tat org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)\n\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:626)\n\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)\n\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:733)\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)\n\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113)\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320)\n\tat org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126)\n\tat org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\n\tat org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\n\tat org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\n\tat org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\n\tat org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\n\tat org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\n\tat vn.co.vis.restful.filter.TokenAuthenticationFilter.doFilterInternal(TokenAuthenticationFilter.java:62)\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\n\tat org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\n\tat org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\n\tat org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92)\n\tat org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77)\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\n\tat org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\n\tat org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)\n\tat org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334)\n\tat org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215)\n\tat org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178)\n\tat org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358)\n\tat org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271)\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)\n\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)\n\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)\n\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)\n\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)\n\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)\n\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)\n\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)\n\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)\n\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)\n\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)\n\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)\n\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)\n\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)\n\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)\n\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)\n\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)\n\tat java.base/java.lang.Thread.run(Thread.java:829)\n","message":"Request method 'GET' not supported","path":"/api/login"}
+2021/07/13 16:45:38:533[INFO][logID]  Request http://localhost:9091/api/error
+2021/07/13 16:45:38:534[INFO]  Response={"timestamp":"2021-07-13T09:45:38.532+00:00","status":403,"error":"Forbidden","message":"Forbidden","path":"/api/login"}
+2021/07/13 16:49:39:207[INFO][logID]  Request http://localhost:9091/api/login
+2021/07/13 16:49:39:208[INFO]  Response={"errorCode":"E0","message":"Failed to parse multipart servlet request; nested exception is java.lang.IllegalStateException: Unable to process parts as no multi-part configuration has been provided"}
+2021/07/13 16:54:01:422[INFO][logID]  Request http://localhost:9091/api/login
+2021/07/13 16:54:01:423[INFO]  Response={"errorCode":"E0","message":"Failed to parse multipart servlet request; nested exception is java.lang.IllegalStateException: Unable to process parts as no multi-part configuration has been provided"}
+2021/07/13 16:55:28:942[INFO][logID]  Request http://localhost:9091/api/login Payload={
+    "username": "username",
+    "password": "password"
+}
+2021/07/13 16:55:28:942[INFO]  Response={"errorCode":"E11","message":"userName{validate.required}"}
+2021/07/13 16:55:41:495[INFO][logID]  Request http://localhost:9091/api/login Payload={
+    "username": "userasdfsdfsname",
+    "password": "passwasfsdford"
+}
+2021/07/13 16:55:41:496[INFO]  Response={"errorCode":"E11","message":"userName{validate.required}"}
+2021/07/13 16:57:14:007[INFO][logID]  Request http://localhost:9091/api/login Payload={
+    "username": "userasdfsdfsname",
+    "password": "passwasfsdford"
+}
+2021/07/13 16:57:14:007[INFO]  Response={"errorCode":"E11","message":"userName{validate.required}"}
+2021/07/13 16:57:19:484[INFO][logID]  Request http://localhost:9091/api/login Payload={
+    "userName": "userasdfsdfsname",
+    "password": "passwasfsdford"
+}
+2021/07/13 16:57:19:484[INFO]  Response={"errorCode":"D0","message":null}
+2021/07/13 16:58:18:093[INFO][logID]  Request http://localhost:9091/api/login Payload={
+    "userName": "userasdfsdfsname",
+    "password": "passwasfsdford"
+}
+2021/07/13 16:58:18:093[INFO]  Response={"errorCode":"D0","message":null}
+2021/07/13 17:02:56:597[INFO][logID]  Request http://localhost:9091/api/users
+2021/07/13 17:02:56:598[INFO]  Response={"errorCode":"E0","message":"rawPassword cannot be null"}
+2021/07/13 17:03:48:366[INFO][logID]  Request http://localhost:9091/api/users
+2021/07/13 17:03:48:366[INFO]  Response={"errorCode":"E0","message":"rawPassword cannot be null"}
+2021/07/13 17:04:49:521[INFO][logID]  Request http://localhost:9091/api/users
+2021/07/13 17:04:49:521[INFO]  Response={"errorCode":"E0","message":"rawPassword cannot be null"}
+2021/07/13 17:05:24:285[INFO][logID]  Request http://localhost:9091/api/users Payload={
+    "userName": "thinhvv",
+    "password": "vanthinh98",
+    "firstName": "thinh",
+    "lastName": "vu",
+    "phone": "3213254564",
+    "email": "thinh@gmail.com"
+}
+2021/07/13 17:05:24:286[INFO]  Response={"id":1,"firstName":"thinh","lastName":"vu","email":"thinh@gmail.com","phone":"3213254564"}
+2021/07/13 17:07:19:646[INFO][logID]  Request http://localhost:9091/api/users Payload={
+    "userName": "thinhvv",
+    "password": "vanthinh98",
+    "firstName": "thinh",
+    "lastName": "vu",
+    "phone": "3213254564",
+    "email": "thinh@gmail.com"
+}
+2021/07/13 17:07:19:653[INFO]  Response={"id":1,"firstName":"thinh","lastName":"vu","email":"thinh@gmail.com","phone":"3213254564"}
+2021/07/13 17:26:16:087[INFO][logID]  Request http://localhost:9091/api/users Payload={
+    "userName": "thinhvv",
+    "password": "vanthinh98",
+    "firstName": "thinh",
+    "lastName": "vu",
+    "phone": "3213254564",
+    "email": "thinh@gmail.com"
+}
+2021/07/13 17:26:16:088[INFO]  Response={"id":2,"firstName":"thinh","lastName":"vu","email":"thinh@gmail.com","phone":"3213254564"}
+2021/07/13 17:30:44:520[INFO][logID]  Request http://localhost:9091/api/users Payload={
+    "userName": "thinhvv",
+    "password": "vanthinh98",
+    "firstName": "thinh",
+    "lastName": "vu",
+    "phone": "3213254564",
+    "email": "thinh@gmail.com"
+}
+2021/07/13 17:30:44:520[INFO]  Response={"id":3,"firstName":"thinh","lastName":"vu","email":"thinh@gmail.com","phone":"3213254564"}
+2021/07/13 17:32:03:573[INFO][logID]  Request http://localhost:9091/api/users
+2021/07/13 17:32:03:574[INFO]  Response=[{"id":1,"firstName":"thinh","lastName":"vu","email":"thinh@gmail.com","phone":"3213254564"},{"id":2,"firstName":"thinh","lastName":"vu","email":"thinh@gmail.com","phone":"3213254564"},{"id":3,"firstName":"thinh","lastName":"vu","email":"thinh@gmail.com","phone":"3213254564"}]
+2021/07/13 17:32:19:624[INFO][logID]  Request http://localhost:9091/api/users
+2021/07/13 17:32:19:624[INFO]  Response=[{"id":1,"firstName":"thinh","lastName":"vu","email":"thinh@gmail.com","phone":"3213254564"},{"id":2,"firstName":"thinh","lastName":"vu","email":"thinh@gmail.com","phone":"3213254564"},{"id":3,"firstName":"thinh","lastName":"vu","email":"thinh@gmail.com","phone":"3213254564"}]
+2021/07/13 17:32:23:973[INFO][logID]  Request http://localhost:9091/api/users Payload={
+    "username": "thinhvv",
+    "password": "vanthinh98",
+    "firstName": "thinh",
+    "lastName": "vu",
+    "phone": "3213254564",
+    "email": "thinh@gmail.com"
+}
+2021/07/13 17:32:23:974[INFO]  Response={"id":4,"firstName":"thinh","lastName":"vu","email":"thinh@gmail.com","phone":"3213254564"}
+2021/07/13 17:33:13:830[INFO][logID]  Request http://localhost:9091/api/login Payload={
+    "userName": "thinhvv",
+    "password": "vanthinh98"
+}
+2021/07/13 17:33:13:830[INFO]  Response={"errorCode":"D0","message":null}
+2021/07/13 17:35:55:101[INFO][logID]  Request http://localhost:9091/api/login Payload={
+    "userName": "thinhvv",
+    "password": "vanthinh98"
+}
+2021/07/13 17:35:55:101[INFO]  Response={"errorCode":"D0","message":null}
+2021/07/13 17:48:47:112[INFO][logID]  Request http://localhost:9091/api/login Payload={
+    "userName": "thinhvv",
+    "password": "vanthinh98"
+}
+2021/07/13 17:48:47:112[INFO]  Response={"errorCode":"E0","message":null}
+2021/07/13 17:50:13:792[INFO][logID]  Request http://localhost:9091/api/login Payload={
+    "userName": "thinhvv",
+    "password": "vanthinh98"
+}
+2021/07/13 17:50:13:793[INFO]  Response={"errorCode":"E0","message":null}
+2021/07/13 17:51:54:584[INFO][logID]  Request http://localhost:9091/api/login Payload={
+    "userName": "thinhvv",
+    "password": "vanthinh98"
+}
+2021/07/13 17:51:54:584[INFO]  Response={"errorCode":"E0","message":null}
+2021/07/13 17:57:04:582[INFO][logID]  Request http://localhost:9091/api/login Payload={
+    "userName": "thinhvv",
+    "password": "vanthinh98"
+}
+2021/07/13 17:57:04:583[INFO]  Response={"errorCode":"E0","message":null}
+2021/07/14 08:23:08:220[INFO][logID]  Request http://localhost:9091/api/login Payload={
+    "userName": "thinhvv",
+    "password": "vanthinh98"
+}
+2021/07/14 08:23:08:220[INFO]  Response={"errorCode":"E0","message":null}
+2021/07/14 08:24:35:900[INFO][logID]  Request http://localhost:9091/api/login Payload={
+    "userName": "thinhvv",
+    "password": "vanthinh98"
+}
+2021/07/14 08:24:35:901[INFO]  Response={"errorCode":"E0","message":null}
+2021/07/14 08:29:55:313[INFO][logID]  Request http://localhost:9091/api/login Payload={
+    "userName": "thinhvv",
+    "password": "vanthinh98"
+}
+2021/07/14 08:29:55:315[INFO]  Response={"errorCode":"E0","message":null}
+2021/07/14 08:38:16:869[INFO][logID]  Request http://localhost:9091/api/login Payload={
+    "userName": "thinhvv",
+    "password": "vanthinh98"
+}
+2021/07/14 08:38:16:869[INFO]  Response={"errorCode":"E0","message":null}
+2021/07/14 09:10:57:616[INFO][logID]  Request http://localhost:9091/api/login Payload={
+    "userName": "thinhvv",
+    "password": "vanthinh98"
+}
+2021/07/14 09:10:57:618[INFO]  Response={"errorCode":"E0","message":null}
+2021/07/14 09:11:20:219[INFO][logID]  Request http://localhost:9091/api/login Payload={
+    "userName": "thinhvv",
+    "password": "vanthinh98"
+}
+2021/07/14 09:11:20:220[INFO]  Response={"id":4,"firstName":"thinh","lastName":"vu","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyTmFtZSI6InRoaW5odnYiLCJpYXQiOjE2MjYyMjg2ODAsImV4cCI6MTYyNjMxNTA4MH0.tprODUKLj4IY_MGmsMKid0IIMlF886TV1bQ72ajuiAw"}
+2021/07/14 09:34:36:699[INFO][logID]  Request http://localhost:9091/api/login Payload={
+    "userName": "thinhvv",
+    "password": "vanthinh98"
+}
+2021/07/14 09:34:36:699[INFO]  Response={"id":4,"firstName":"thinh","lastName":"vu","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyTmFtZSI6InRoaW5odnYiLCJpYXQiOjE2MjYyMzAwNzYsImV4cCI6MTYyNjMxNjQ3Nn0.U-xv3sNHZUmFaSt7YsD1PkYslCTbRIVtwZeWRdFWGPI"}
+2021/07/14 09:38:34:828[INFO][logID]  Request http://localhost:9091/api/login Payload={
+    "userName": "thinhvv",
+    "password": "vanthinh98"
+}
+2021/07/14 09:38:34:828[INFO]  Response={"id":4,"firstName":"thinh","lastName":"vu","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyTmFtZSI6InRoaW5odnYiLCJpYXQiOjE2MjYyMzAzMTQsImV4cCI6MTYyNjMxNjcxNH0.62G5taHdWVLHw1Euavc1sk1embiWbEgXn40Y_Cex3WM"}
+2021/07/14 10:05:33:829[INFO][logID]  Request http://localhost:9091/api/users Payload={
+    "username": "thinhvv1",
+    "password": "vanthinh98",
+    "firstName": "thinh",
+    "lastName": "vu",
+    "phone": "3213254564",
+    "email": "thinh@gmail.com"
+}
+2021/07/14 10:05:33:830[INFO]  Response={"id":5,"firstName":"thinh","lastName":"vu","email":"thinh@gmail.com","phone":"3213254564"}
+2021/07/14 10:05:41:351[INFO][logID]  Request http://localhost:9091/api/users Payload={
+    "username": "thinhvv1",
+    "password": "vanthinh98",
+    "firstName": "thinh",
+    "lastName": "vu",
+    "phone": "3213254564",
+    "email": "thinh@gmail.com"
+}
+2021/07/14 10:05:41:352[INFO]  Response={"id":6,"firstName":"thinh","lastName":"vu","email":"thinh@gmail.com","phone":"3213254564"}
+2021/07/14 10:10:54:013[INFO][logID]  Request http://localhost:9091/api/users Payload={
+    "username": "thinhvv",
+    "password": "vanthinh98",
+    "firstName": "thinh",
+    "lastName": "vu",
+    "phone": "3213254564",
+    "email": "thinh@gmail.com"
+}
+2021/07/14 10:10:54:015[INFO]  Response={"id":1,"firstName":"thinh","lastName":"vu","email":"thinh@gmail.com","phone":"3213254564"}
+2021/07/14 10:10:58:512[INFO][logID]  Request http://localhost:9091/api/login Payload={
+    "userName": "thinhvv",
+    "password": "vanthinh98"
+}
+2021/07/14 10:10:58:513[INFO]  Response={"id":1,"firstName":"thinh","lastName":"vu","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyTmFtZSI6InRoaW5odnYiLCJpYXQiOjE2MjYyMzIyNTgsImV4cCI6MTYyNjMxODY1OH0.XJF5DHLwOhJUW0FBWwD8OxtF74HLZ2B80UBnfng6whY"}
+2021/07/14 10:20:31:424[INFO][logID]  Request http://localhost:9091/api/users Payload={
+    "username": "thinhvv",
+    "password": "vanthinh98",
+    "firstName": "thinh",
+    "lastName": "vu",
+    "phone": "3213254564",
+    "email": "thinh@gmail.com"
+}
+2021/07/14 10:20:31:425[INFO]  Response={"id":1,"firstName":"thinh","lastName":"vu","email":"thinh@gmail.com","phone":"3213254564"}
+2021/07/14 10:20:51:517[INFO][logID]  Request http://localhost:9091/api/login Payload={
+    "userName": "thinhvv",
+    "password": "vanthinh98"
+}
+2021/07/14 10:20:51:517[INFO]  Response={"id":1,"firstName":"thinh","lastName":"vu","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyTmFtZSI6InRoaW5odnYiLCJpYXQiOjE2MjYyMzI4NTEsImV4cCI6MTYyNjMxOTI1MX0.jArVPJkptGDC2d2th0t1YKunKjJ_Q6lWlG_aGHyE4Mo"}
+2021/07/14 10:21:14:622[INFO][logID]  Request http://localhost:9091/api/users Payload={
+    "username": "thinhvv",
+    "password": "vanthinh98",
+    "firstName": "thinh",
+    "lastName": "vu",
+    "phone": "3213254564",
+    "email": "thinh@gmail.com"
+}
+2021/07/14 10:21:14:623[INFO]  Response={"errorCode":"E0","message":"could not execute statement; SQL [n/a]; constraint [user.UK_sb8bbouer5wak8vyiiy4pf2bx]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement"}
+2021/07/14 10:22:02:247[INFO][logID]  Request http://localhost:9091/api/users
+2021/07/14 10:22:02:248[INFO]  Response=[{"id":1,"firstName":"thinh","lastName":"vu","email":"thinh@gmail.com","phone":"3213254564"}]
+2021/07/14 10:22:13:697[INFO][logID]  Request http://localhost:9091/api/users/thinhvv
+2021/07/14 10:22:13:698[INFO]  Response={"id":1,"firstName":"thinh","lastName":"vu","email":"thinh@gmail.com","phone":"3213254564"}
+2021/07/14 14:27:35:590[INFO][logID]  Request http://localhost:9091/api/login Payload={"userName":"thinhvv","password":"vanthinh98"}
+2021/07/14 14:27:35:592[INFO]  Response={"id":1,"firstName":"thinh","lastName":"vu","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyTmFtZSI6InRoaW5odnYiLCJpYXQiOjE2MjYyNDc2NTUsImV4cCI6MTYyNjMzNDA1NX0.PVi5LPd7cGwbFvOBx749oX1HZgQRrs1SvNeLifbq0Ac"}
+2021/07/14 14:27:35:663[INFO][logID]  Request http://localhost:9091/api/users/thinhvv
+2021/07/14 14:27:35:663[INFO]  Response={"id":1,"firstName":"thinh","lastName":"vu","email":"thinh@gmail.com","phone":"3213254564"}
+2021/07/14 15:44:13:432[INFO][logID]  Request http://localhost:9091/api/users Payload={"id":0,"firstName":null,"lastName":null,"username":null,"password":null,"phone":null,"email":null}
+2021/07/14 15:44:13:435[INFO]  Response={"errorCode":"E0","message":"rawPassword cannot be null"}
+2021/07/14 16:28:06:574[INFO][logID]  Request http://localhost:9091/api/users Payload={"id":0,"firstName":"Thịnh","lastName":"Thịnh","username":"thinhvv11","password":"vanthinh98","phone":"0356254682","email":"thinh@gmail.com"}
+2021/07/14 16:28:06:575[INFO]  Response={"id":3,"firstName":"Thá»nh","lastName":"Thá»nh","email":"thinh@gmail.com","phone":"0356254682"}
+2021/07/15 15:35:49:519[INFO][logID]  Request http://localhost:9091/api/login Payload={"userName":"thinhvv","password":"vanthinh98"}
+2021/07/15 15:35:49:525[INFO]  Response={"id":1,"firstName":"thinh","lastName":"vu","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyTmFtZSI6InRoaW5odnYiLCJpYXQiOjE2MjYzMzgxNDksImV4cCI6MTYyNjQyNDU0OX0.8NGfROm9RC6nGjwC6dHEMHzF91ALj_DfO5Wc9aDaSzs"}
+2021/07/15 15:35:49:638[INFO][logID]  Request http://localhost:9091/api/users/thinhvv
+2021/07/15 15:35:49:638[INFO]  Response={"id":1,"firstName":"thinh","lastName":"vu","email":"thinh@gmail.com","phone":"3213254564"}
+2021/07/15 15:36:58:550[INFO][logID]  Request http://localhost:9091/api/users Payload={"id":0,"firstName":"Thịnh","lastName":"Thịnh","username":"thinh123","password":"vanthinh98","phone":"0356254682","email":"thinh@gmail.com"}
+2021/07/15 15:36:58:551[INFO]  Response={"id":4,"firstName":"Thá»nh","lastName":"Thá»nh","email":"thinh@gmail.com","phone":"0356254682"}
+2021/07/15 15:37:06:558[INFO][logID]  Request http://localhost:9091/api/login Payload={"userName":"thinh123","password":"vanthinh98"}
+2021/07/15 15:37:06:558[INFO]  Response={"id":4,"firstName":"Thá»nh","lastName":"Thá»nh","token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyTmFtZSI6InRoaW5oMTIzIiwiaWF0IjoxNjI2MzM4MjI2LCJleHAiOjE2MjY0MjQ2MjZ9.xsEFn78R47oR4zmMkCQk7I-Q7PrnrJv8AWNl33mMiZM"}
+2021/07/15 15:37:06:592[INFO][logID]  Request http://localhost:9091/api/users/thinh123
+2021/07/15 15:37:06:592[INFO]  Response={"id":4,"firstName":"Thá»nh","lastName":"Thá»nh","email":"thinh@gmail.com","phone":"0356254682"}

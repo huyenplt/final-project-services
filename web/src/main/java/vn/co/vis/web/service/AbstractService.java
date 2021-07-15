@@ -4,13 +4,14 @@ import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.env.Environment;
-import vn.co.vis.common.exchange.ApiExchangeService;
+import vn.co.vis.web.exchange.ApiExchangeService;
 import vn.co.vis.common.utility.ObjectValidator;
 
 import javax.annotation.PostConstruct;
 
 /**
  * Common attribute or method for service
+ *
  * @author Giang Thanh Quang
  * @since 10/15/2020
  */

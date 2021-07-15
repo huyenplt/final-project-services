@@ -6,7 +6,7 @@ public enum LoggerType {
     API("apiLog"),
     SQL("sqlLog");
 
-    private String loggerName;
+    private final String loggerName;
 
     LoggerType(String loggerName) {
         this.loggerName = loggerName;

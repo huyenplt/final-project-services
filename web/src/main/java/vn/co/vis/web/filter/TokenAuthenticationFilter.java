@@ -3,7 +3,6 @@ package vn.co.vis.web.filter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.http.HttpHeaders;
 import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
 import org.springframework.web.servlet.HandlerExceptionResolver;
@@ -20,7 +19,6 @@ import java.util.List;
 
 /**
  * Filter authenticate token for system
- *
  */
 public class TokenAuthenticationFilter extends OncePerRequestFilter {
 
@@ -40,20 +38,20 @@ public class TokenAuthenticationFilter extends OncePerRequestFilter {
             "/js",
             "/img",
             "/fonts",
-            "/login"
+            "/login",
+            "/user/create"
     );
 
     @Value("${spring.profiles.active}")
     private String profileActive;
 
 
-
     /**
      * Override doFilterInternal in OncePerRequestFilter
      *
-     * @param httpRequest current request
-     * @param httpResponse    current response
-     * @param chain       current FilterChain
+     * @param httpRequest  current request
+     * @param httpResponse current response
+     * @param chain        current FilterChain
      * @throws ServletException
      * @throws IOException
      */

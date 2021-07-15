@@ -1,6 +1,6 @@
 package vn.co.vis.restful.service;
 
-import vn.co.vis.restful.dao.entity.User;
+import vn.co.vis.common.dao.entity.User;
 import vn.co.vis.common.dto.response.UserResponse;
 
 import java.util.List;
@@ -14,4 +14,5 @@ import java.util.Optional;
 public interface UserService {
     Optional<UserResponse> getUser(String userName);
     Optional<List<UserResponse>> getUsers();
+    Optional<UserResponse> createUser(User user);
 }

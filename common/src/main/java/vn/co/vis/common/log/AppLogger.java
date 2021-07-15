@@ -58,6 +58,6 @@ public class AppLogger {
     private String prepareMessage(String msg, Object[] headerNames) {
         return Arrays.stream(headerNames)
                 .map(p -> String.format("[%s]", p))
-                .collect(Collectors.joining("")) +  " " + msg;
+                .collect(Collectors.joining("")) + " " + msg;
     }
 }

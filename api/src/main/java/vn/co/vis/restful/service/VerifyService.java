@@ -1,8 +1,6 @@
 package vn.co.vis.restful.service;
 
-import vn.co.vis.restful.dao.entity.User;
-
-import java.util.Optional;
+import vn.co.vis.common.dao.entity.User;
 
 /**
  * @author Giang Thanh Quang
